@@ -113,7 +113,10 @@ button{
     border: none;
     background-color: white;
     border-radius: 12px;
+    cursor: pointer;
 }
+
+
 
 
 @media(max-width:600px){
