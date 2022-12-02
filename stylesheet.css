@@ -1,0 +1,134 @@
+*{
+    margin:0;
+    padding:0;
+    margin-block-end:0;
+    margin-block-start:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font:62.5%/1.5;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust:100%;
+}
+
+header{
+    width:100%;
+    background-color: white;
+
+}
+
+header ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+}
+
+header nav li{
+    list-style: none;
+    display: inline-block;
+    text-decoration: none;
+    padding: 0em 2em;
+
+}
+
+header li:last-of-type{
+    margin-left: auto;
+}
+
+
+
+
+header ul img{
+    width: 150px;
+    object-fit: contain;
+    height: auto;
+    padding:2em 0em
+}
+
+
+
+
+
+
+main{
+  background-image: url("./assets/mainvse.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.side-margins{
+    max-width: 1200px;
+    padding: 0em 2em;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.center-text{
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.hero-text{
+    width: 100%;
+    padding-bottom: 3em;
+}
+
+.hero-text h1{
+    font-size:60px;
+    font-weight: 800;
+    padding-bottom: 0.3em;
+    color: white;
+}
+
+p{
+    font-size: 16px;
+    color: white;
+}
+
+.flex-buttons{
+    display:flex;
+    flex-direction: row;
+}
+
+button{
+    color: #1B6DBF;
+    font-weight: bold;
+    padding: 1em 2em;
+    margin-right: 2em;
+    border: none;
+    border-radius: 12px;
+}
+
+
+@media(max-width:600px){
+    .hero-text h1{
+    font-size: 30px;
+}
+
+.flex-buttons{
+    flex-direction: column;
+    font-size:14px;
+}
+
+button{
+    margin-top: 1em;
+    margin-right: 0em;
+}
+header ul img{
+    width: 80px;
+    object-fit: contain;
+    height: auto;
+    padding:1em 0em
+}
+    }
